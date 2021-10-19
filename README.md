@@ -7,6 +7,6 @@
   - taaak
 (http://google.com)
 
-'''python
-print("Hello Wold!")
+'''
+print("Hello World!")
 '''
