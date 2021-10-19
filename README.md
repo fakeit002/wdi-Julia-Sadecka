@@ -6,4 +6,5 @@
   - wstep do informatyki
   - taaak
 (http://google.com)
-print("Hello Wold!)
+
+print("Hello Wold!")
