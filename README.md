@@ -6,5 +6,6 @@
   - wstep do informatyki
   - taaak
 (http://google.com)
-
+'''python
 print("Hello Wold!")
+'''
