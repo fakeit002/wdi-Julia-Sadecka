@@ -13,3 +13,5 @@ print("Hello World!")
 Imię  |  Nazwisko
 ------|----------
 Julia |  Sadecka
+
+![](laboratorium_2/cat.jpg)
