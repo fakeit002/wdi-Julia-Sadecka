@@ -25,13 +25,17 @@ while h == 1:
 # wypłata
         if d == b:
             f = float(input("Ile? Wpisz kwotę: "))
-            while f > saldo:
-                f = float(input("Kwota nie może być większa niż stan konta. Jeśli chcesz wypłacić mniejszą kwotę - wpisz ją, jeśli chcesz zrobić coś innego wpisz '0'"))
-                if f == 0:
-                    print(".")
-                elif f <= saldo:
-                    saldo = saldo - f
-                    print("Stan twojego konta to: " + str(saldo))
+            if f <= saldo:
+                saldo = saldo - f
+                print("Stan twojego konta to: " + str(saldo))
+            else:
+                while f > saldo:
+                    f = float(input("Kwota nie może być większa niż stan konta. Jeśli chcesz wypłacić mniejszą kwotę - wpisz ją, jeśli chcesz zrobić coś innego wpisz '0'"))
+                    if f == 0:
+                        print(".")
+                    elif f <= saldo:
+                        saldo = saldo - f
+                        print("Stan twojego konta to: " + str(saldo))
     h = int(input("Czy chcesz coś jeszcze zrobić?: '1' - tak, '2' - nie "))
     if h == 2:
         print("Dziękujemy i zapraszamy ponownie")
