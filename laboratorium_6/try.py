@@ -1,4 +1,9 @@
-liczba = int(input("Podaj liczbę: "))
+
+try:
+    liczba = int(input("Podaj liczbę: "))
+except ValueError:
+    print("Ojj... To nie jest liczba całkowita, wprowadź liczbę całkowitą")
+
 if liczba == 0:
     print("Liczba jest palindromem \nLiczba w postaci binarnej jest palindromem")
 else:
@@ -15,7 +20,7 @@ else:
 
 # zamiana na binarne
     a = liczba
-    liczba2 = ''
+    liczba2 = '0'
     while a > 0:
         liczba2 = str(a % 2) + liczba2
         a = int(a / 2)
@@ -24,7 +29,7 @@ else:
 
 # odwrócona liczba w postaci binarnej
     b = liczba2
-    # x2 = ''
+    x2 = ''
     odwr2 = 0
     while b > 0:
         x2 = b % 10
@@ -39,7 +44,7 @@ else:
     else:
         print("Liczba nie jest palindromem")
 
-    if odwr2 == liczba2:
-        print("Liczba w postaci binarnej jest palindromem")
-    else:
+    if odwr2 != liczba2 or liczba < 0:
         print("Liczba w postaci binarnej nie jest palindromem")
+    else:
+        print("Liczba w postaci binarnej jest palindromem")

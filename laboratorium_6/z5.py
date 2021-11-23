@@ -44,6 +44,5 @@ try:
             print("Liczba w postaci binarnej jest palindromem")
         else:
             print("Liczba w postaci binarnej nie jest palindromem")
-except ValueError:
-    print("Ojj... Ta liczba nie jest naturalna, wprowadź liczbę naturalną")
+
 
