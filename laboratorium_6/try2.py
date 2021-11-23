@@ -15,7 +15,13 @@ try:
                 y = (y - x) / 10
                 y = float(y)
             print(odwr)
+            return odwr
         odwrócenie(liczba)
+# sprawdzenie czy liczby są palindromami
+        if odwrócenie(liczba) == liczba:
+            print("Liczba jest palindromem")
+        else:
+            print("Liczba nie jest palindromem")
         # print(odwr)
 
 # zamiana na binarne
@@ -27,26 +33,11 @@ try:
         print(liczba2)
         liczba2 = int(liczba2)
 
-    odwrócenie(liczba2)
-# odwrócona liczba w postaci binarnej
-#         b = liczba2
-#         odwr2 = 0
-#         while b > 0:
-#             x2 = b % 10
-#             odwr2 = odwr2 * 10 + x2
-#             b = (b - x2) / 10
-#             b = int(b)
-        # print(odwr2)
+        odwrócenie(liczba2)
 
-# sprawdzenie czy liczby są palindromami
-#         if odwr == liczba:
-#             print("Liczba jest palindromem")
-#         else:
-#             print("Liczba nie jest palindromem")
-#
-#         if odwr2 == liczba2:
-#             print("Liczba w postaci binarnej jest palindromem")
-#         else:
-#             print("Liczba w postaci binarnej nie jest palindromem")
+        if odwrócenie(liczba2) == liczba2:
+            print("Liczba w postaci binarnej jest palindromem")
+        else:
+            print("Liczba w postaci binarnej nie jest palindromem")
 except ValueError:
     print("Ojj... Ta liczba nie jest naturalna, wprowadź liczbę naturalną")
