@@ -35,8 +35,7 @@ def compare(a):
     print("Result: " + str(result))
 
 
-compare(list1)
-compare(list2)
-compare(list3)
+# compare(list1)
+# compare(list2)
+# compare(list3)
 compare(list4)
-
