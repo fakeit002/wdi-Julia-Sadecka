@@ -1,0 +1,10 @@
+Suma i roznica macierzy nie istnieje. Macierze musza miec wiersze i kolumny rownej dlugosci 
+
+Iloczyn macierzy: 
+[[14, -1, 2], [2, -1, 0]]
+
+Wynik mnozenie przez skalar pierwszej macierzy: 
+[[2, 4, 6], [-2, 0, 2]]
+
+Wynik mnozenie przez skalar drugiej macierzy: 
+[[2, 2, 0], [4, -2, 2], [6, 0, 0]]
