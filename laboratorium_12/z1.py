@@ -82,11 +82,11 @@ red1 = Fraction.reduce(f01)
 red2 = Fraction.reduce(f02)
 
 # Wyniki działań
-print(f'\nSkrócone ułamki: \nPierwszy: {red1.numerator} / {red1.denominator}\nDrugi: {red2.numerator} / {red2.denominator}')
-print(f'\nWynik dodawania to: {add.numerator} / {add.denominator}')
-print(f'Wynik odejmowania to: {sub.numerator} / {sub.denominator}')
-print(f'Wynik mnożenia to: {mult.numerator} / {mult.denominator}')
-print(f'Wynik dzielenia to: {div.numerator} / {div.denominator}')
+print(f'\nSkrócone ułamki: \nPierwszy: {red1.numerator}/{red1.denominator}\nDrugi: {red2.numerator}/{red2.denominator}')
+print(f'\nWynik dodawania to: {add.numerator}/{add.denominator}')
+print(f'Wynik odejmowania to: {sub.numerator}/{sub.denominator}')
+print(f'Wynik mnożenia to: {mult.numerator}/{mult.denominator}')
+print(f'Wynik dzielenia to: {div.numerator}/{div.denominator}')
 
 # rozwiązanie równania metodą wyznaczników
 w = Fraction.subtraction(Fraction.multiplication(f01, f05), Fraction.multiplication(f04, f02))
@@ -94,8 +94,7 @@ wx = Fraction.subtraction(Fraction.multiplication(f03, f05), Fraction.multiplica
 wy = Fraction.subtraction(Fraction.multiplication(f01, f06), Fraction.multiplication(f04, f03))
 x = Fraction.division(wx, w)
 y = Fraction.division(wy, w)
-print(f'\nx to: {x.numerator} / {x.denominator}')
-print(f'y to: {y.numerator} / {y.denominator}')
-
+print(f'\nx to: {x.numerator}/{x.denominator}')
+print(f'y to: {y.numerator}/{y.denominator}')
 # Dla liczb( 1 5, 6 8, 5 4, -1 5, 3 4, 4 16)
 # Wyniki powinny być: (1/5, 3/4, 19/20, -11/20, 3/20, 4/15, 5/2, 1)
