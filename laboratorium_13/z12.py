@@ -9,4 +9,4 @@ def hanoi(n, left, middle, right):
         hanoi(n - 1, middle, left, right)
 
 
-hanoi(4, 'A', 'B', 'C')
+hanoi(2, 'A', 'B', 'C')

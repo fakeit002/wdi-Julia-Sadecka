@@ -50,14 +50,15 @@ def mult(n, m):
     return x
 
 
-def scal(n, scalar):
-    for i in range(len(n)):
-        for j in range(len(n[0])):
-            n[i][j] = n[i][j] * scalar
-    n = str(n)
-    return n
+# def scal(n, scalar):
+#     for i in range(len(n)):
+#         for j in range(len(n[0])):
+#             n[i][j] = n[i][j] * scalar
+#     n = str(n)
+#     return n
 
-scalar = int(input("Podaj skalar przez, który chcesz przemnożyć macierze:"))
+# scalar = int(input("Podaj skalar przez, który chcesz przemnożyć macierze:"))
+
 
 with open('results.txt', 'w') as result:
     try:
@@ -78,8 +79,8 @@ with open('results.txt', 'w') as result:
     except ValueError:
         result.write('\nIloczyn macierzy nie istnieje. Pierwsza macierz musi miec dlugosc wiersza rowną dlugosci kolumny drugiej\n\n')
 
-    result.write('\n\nWynik mnozenie przez skalar pierwszej macierzy: \n')
-    result.write(scal(matrix1, scalar))
-    result.write('\n\nWynik mnozenie przez skalar drugiej macierzy: \n')
-    result.write(scal(matrix2, scalar))
+    # result.write('\n\nWynik mnozenie przez skalar pierwszej macierzy: \n')
+    # result.write(scal(matrix1, scalar))
+    # result.write('\n\nWynik mnozenie przez skalar drugiej macierzy: \n')
+    # result.write(scal(matrix2, scalar))
 
